@@ -6,9 +6,9 @@ df = pd.read_excel("telemetry_data.xlsx")
 
 
 # Calculate turbine metrics
-turbine_metrics = df.groupby("Turbine_ID").agg(
-    Average_Temperature=("Temperature", "mean"),
-    Maximum_Vibration=("Vibration", "max")
+turbine_metrics = df.groupby("turbine_id").agg(
+    Average_Temperature=("temperature_c", "mean"),
+    Maximum_Vibration=("vibration_mm_s", "max")
 )
 
 
