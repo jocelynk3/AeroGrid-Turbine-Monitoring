@@ -23,6 +23,15 @@ Run:
 
 python analyse_turbines.py
 
+## Output
+
+The script analyses turbine telemetry data and identifies turbines requiring maintenance based on:
+
+- Average temperature > 85°C
+- Maximum vibration > 15 mm/s
+
+Results are displayed in the terminal and saved to failing_turbines.csv.
+
 
 ## Technology Used
 
@@ -30,3 +39,4 @@ python analyse_turbines.py
 - Pandas
 - Docker
 - IoT telemetry analysis
+
